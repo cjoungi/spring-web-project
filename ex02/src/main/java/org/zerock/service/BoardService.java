@@ -21,5 +21,5 @@ public interface BoardService {
 	public List<BoardVO> getList(Criteria cri);
 	
 	// 전체 데이터 개수
-	//public int getTotal(Criteria cri);
+	public int getTotal(Criteria cri);
 }

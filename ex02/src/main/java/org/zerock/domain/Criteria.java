@@ -12,7 +12,7 @@ public class Criteria {
 
 	private int pageNum;
 	private int amount;
-	
+	//검색 조건
 	private String type;
 	private String keyword;
 	
@@ -28,7 +28,8 @@ public class Criteria {
 	public String[] getTypeArr() {
 		return type == null ? new String[] {} : type.split("");
 	}
-	
+
+	// 파라미터 링크 생성
 	public String getListLink() {
 		UriComponentsBuilder builder = UriComponentsBuilder.fromPath("")
 			.queryParam("pageNum", this.pageNum)
